@@ -1,0 +1,17 @@
+<% if(complete == 'true') { %>
+ <% var checked = "checked='true'" %>
+ <% var klass = 'checked' %>
+<% } else { %>
+ <% var checked = '' %>
+ <% var klass = '' %>
+<% } %>
+
+<div class='note center'>
+ <button class='remove-note right' data-id='<%= id %>'>X</button>
+ <br />
+ <p class='<%= klass %> title' data-id='<%= id %>' ><%= title %></p>
+ <input type='checkbox' id='<%= id %>' <%= checked %> />
+ <label for='<%= id %>'>Complete?</label>
+ <br />
+</div>
+<br />

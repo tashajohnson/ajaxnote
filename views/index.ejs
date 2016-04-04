@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 class='center'><%= title %></h1>
+
+    <div class='row'>
+      <form class='col s12 m4' id='add_note' action='POST'>
+        <input type='text' name='title' placeholder='Note Title' />
+        <input type='submit' class='btn' /> 
+      </form>
+
+      <div class='corkboard col s12 m8'>
+        <h3 class='center'>All Tasks</h3>
+        <hr />
+        <div id='note_list'>
+        </div>
+      </div>
+    </div>
+    
+
+    <script type='text/javascript' src='../../bower_components/jquery/dist/jquery.min.js'></script>
+    
+    <script type='text/javascript' src='/javascripts/notes.js'></script>
+  </body>
+</html>
